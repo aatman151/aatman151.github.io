@@ -162,3 +162,26 @@ body.dark footer {
 body.dark a {
   color: #88caff;
 }
+
+
+
+/* Skills Grid Layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.skills-grid .card {
+  list-style: none;
+}
+
+
+.card ul {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.card li {
+  margin-bottom: 0.25rem;
+}
