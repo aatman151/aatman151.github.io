@@ -1,26 +1,6 @@
-// Hamburger menu toggle
-const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
+// script.js
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
-});
+// No dark/light toggle needed — dark mode is default
+// You can add JS here for interactivity later if needed
 
-// Dark mode toggle
-const themeToggle = document.getElementById("theme-toggle");
-const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-const storedTheme = localStorage.getItem("theme");
-
-if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
-  document.body.classList.add("dark");
-}
-
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  const isDark = document.body.classList.contains("dark");
-  localStorage.setItem("theme", isDark ? "dark" : "light");
-  themeToggle.textContent = isDark ? "☀️" : "🌙";
-});
-
-// Set correct icon on load
-themeToggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+console.log("Site loaded with dark mode palette.");
