@@ -1,5 +1,5 @@
 :root {
-  --primary-bg: #ffffff;
+  --primary-bg: #0d1117;
   --secondary-bg: #161b22;
   --accent-blue: #0033A0; /* Toronto Maple Leafs blue */
   --text-light: #e6edf3;
@@ -118,11 +118,4 @@ footer {
   padding: 2rem 1rem;
   background-color: var(--secondary-bg);
   color: var(--text-muted);
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
 }
